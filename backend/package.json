@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "bcryptjs": "^3.0.2",
+    "Callify": "file:..",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
@@ -21,7 +22,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
     "openssl": "^2.0.0",
-    "stream-chat": "^8.60.0"
+    "stream-chat": "^9.28.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
