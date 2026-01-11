@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "git": "^0.1.5"
+    "git": "^0.1.5",
+    "stream-chat": "^9.28.0"
   }
 }
