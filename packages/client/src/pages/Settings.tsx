@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useAuthStore } from '../store/useAuthStore';
 import { useTheme } from '../context/ThemeProvider';
 import { Settings as SettingsIcon, Palette, User, Shield, Bell } from 'lucide-react';

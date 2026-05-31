@@ -1,6 +1,4 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { 
   MessageSquare, 
   Users, 
@@ -17,14 +15,14 @@ import {
 } from 'lucide-react';
 import { useAuthStore } from '../store/useAuthStore';
 import { cn } from '../lib/utils';
-import { useTheme } from '../context/ThemeProvider';
+
 import { useUIStore } from '../store/useUIStore';
 import { NotificationBell } from './NotificationBell';
 
 export const Sidebar = () => {
   const user = useAuthStore(state => state.user);
   const logout = useAuthStore(state => state.logout);
-  const { accentColor } = useTheme();
+
   const { isAIPanelOpen, toggleAIPanel } = useUIStore();
 
   const getAccentClass = (isActive: boolean) => {

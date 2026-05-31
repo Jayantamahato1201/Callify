@@ -11,7 +11,7 @@ interface SettingsModalProps {
 export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose }) => {
   const [activeTab, setActiveTab] = useState('General');
   const user = useAuthStore(state => state.user);
-  const updateUser = useAuthStore(state => state.updateUser);
+
 
   const tabs = [
     { id: 'General', icon: <Settings size={18} /> },

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Bot, Sparkles, Send, X, Mic, Image as ImageIcon } from 'lucide-react';
+import { Bot, Send, X, Mic, Image as ImageIcon } from 'lucide-react';
 import { Button } from './ui/Button';
 import { motion, AnimatePresence } from 'framer-motion';
 

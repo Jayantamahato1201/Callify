@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Lock, Bell, MoreHorizontal, User, Settings, Image as ImageIcon, Shield, Globe, MessageSquare, Camera, Loader2 } from 'lucide-react';
+import { X, Lock, Bell, MoreHorizontal, User, Settings, Shield, Globe, MessageSquare, Camera, Loader2 } from 'lucide-react';
 import { useAuthStore } from '../store/useAuthStore';
 import { useTheme } from '../context/ThemeProvider';
 import { useUIStore } from '../store/useUIStore';

@@ -2,10 +2,8 @@ import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { searchUsers, getFriends, getPendingRequests, sendFriendRequest, acceptFriendRequest, rejectFriendRequest } from '../api/friend';
 import { createOrGetDirectConversation } from '../api/chat';
-import { useNavigate, Link } from 'react-router-dom';
-import { MessageSquare, Users, Sparkles, Search, UserPlus, UserCheck, X, Check } from 'lucide-react';
-import { NotificationBell } from '../components/NotificationBell';
-import { useAuthStore } from '../store/useAuthStore';
+import { useNavigate } from 'react-router-dom';
+import { MessageSquare, Users, Search, UserPlus, UserCheck, X, Check } from 'lucide-react';
 import { Input } from '../components/ui/Input';
 import { Button } from '../components/ui/Button';
 import { cn } from '../lib/utils';
@@ -14,7 +12,7 @@ import { motion } from 'framer-motion';
 export const Friends = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const queryClient = useQueryClient();
-  const user = useAuthStore(state => state.user);
+
   const navigate = useNavigate();
 
   const { data: searchResults, isLoading: searching } = useQuery({

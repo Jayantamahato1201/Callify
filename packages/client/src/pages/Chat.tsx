@@ -54,7 +54,7 @@ export const Chat = () => {
     enabled: !!activeConversationId,
   });
 
-  const { data: smartReplies } = useQuery({
+  useQuery({
     queryKey: ['smart-replies', activeConversationId, messages?.length],
     queryFn: () => getSmartReplies(activeConversationId!),
     enabled: !!activeConversationId && !!messages && messages.length > 0,
@@ -99,7 +99,7 @@ export const Chat = () => {
     }
   });
 
-  const summarizeMutation = useMutation({
+  useMutation({
     mutationFn: () => getConversationSummary(activeConversationId!),
     onSuccess: (data) => setSummary(data.summary)
   });
